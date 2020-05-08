@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.epul.oeuvre.domains.EntityReservation">
+        <table name="reservation" schema="baseoeuvre" catalog=""/>
+        <id-class class="com.epul.oeuvre.domains.EntityReservationPK"/>
+        <attributes>
+            <id name="idOeuvrevente">
+                <column name="id_oeuvrevente" precision="10"/>
+            </id>
+            <id name="idAdherent">
+                <column name="id_adherent" precision="10"/>
+            </id>
+            <basic name="dateReservation">
+                <column name="date_reservation" precision="-1"/>
+            </basic>
+            <basic name="statut">
+                <column name="statut" length="20"/>
+            </basic>
+            <basic name="idProprietaire">
+                <column name="id_proprietaire" nullable="false" precision="10"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

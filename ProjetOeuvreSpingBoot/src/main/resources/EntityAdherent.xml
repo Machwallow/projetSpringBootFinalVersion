@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.epul.oeuvre.domains.EntityAdherent">
+        <table name="adherent" schema="baseoeuvre" catalog=""/>
+        <attributes>
+            <id name="idAdherent">
+                <column name="id_adherent" precision="10"/>
+            </id>
+            <basic name="nomAdherent">
+                <column name="nom_adherent" length="100"/>
+            </basic>
+            <basic name="prenomAdherent">
+                <column name="prenom_adherent" nullable="false" length="100"/>
+            </basic>
+            <basic name="villeAdherent">
+                <column name="ville_adherent" nullable="false" length="100"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

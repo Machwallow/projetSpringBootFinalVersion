@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.epul.oeuvre.domains.EntityUtilisateur">
+        <table name="utilisateur" schema="baseoeuvre" catalog=""/>
+        <attributes>
+            <id name="numUtil">
+                <column name="NumUtil" precision="11"/>
+            </id>
+            <basic name="nomUtil">
+                <column name="NomUtil" length="100"/>
+            </basic>
+            <basic name="prenomUtil">
+                <column name="PrenomUtil" length="100"/>
+            </basic>
+            <basic name="motPasse">
+                <column name="MotPasse" length="100"/>
+            </basic>
+            <basic name="salt">
+                <column name="salt" length="100"/>
+            </basic>
+            <basic name="role">
+                <column name="role" length="100"/>
+            </basic>
+            <basic name="solde">
+                <column name="solde" precision="2"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>
