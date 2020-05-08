@@ -2,7 +2,7 @@
 
 ##### ! Ne pas oublier d'ajouter la base de données, fichier sql présent dans "resources" !
 
-## Principes de l'utilisation
+## Principes du projet
 
 Gestion d'oeuvres qui peuvent être empruntées et d'oeuvres disponibles à l'achat
 
